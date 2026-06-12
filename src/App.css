@@ -61,3 +61,15 @@ body {
 .repo-card a {
   color: #58a6ff;
 }
+
+.loading {
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.error {
+  text-align: center;
+  color: #ff6b6b;
+  margin: 20px;
+}

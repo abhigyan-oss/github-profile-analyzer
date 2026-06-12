@@ -1,9 +1,16 @@
 function RepoList({ repos }) {
+    const topRepos = [...repos]
+      .sort(
+        (a, b) =>
+          b.stargazers_count - a.stargazers_count
+      )
+      .slice(0, 5);
+  
     return (
       <div>
-        <h2>Repositories</h2>
+        <h2>Top Repositories</h2>
   
-        {repos.slice(0, 5).map((repo) => (
+        {topRepos.map((repo) => (
           <div
             key={repo.id}
             className="repo-card"
