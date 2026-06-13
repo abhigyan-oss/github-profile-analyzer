@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 function SearchBar({ onSearch }) {
   const [username, setUsername] = useState("");
@@ -26,6 +27,7 @@ function SearchBar({ onSearch }) {
       />
 
       <button type="submit">
+      <FaGithub />
         Search
       </button>
     </form>

@@ -23,9 +23,9 @@ function RepoList({ repos }) {
               ⭐ {repo.stargazers_count}
             </p>
   
-            <p>
-              Language: {repo.language}
-            </p>
+            <span className="language-badge">
+             {repo.language}
+             </span>
   
             <a
               href={repo.html_url}
