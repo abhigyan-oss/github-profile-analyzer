@@ -275,3 +275,10 @@ body {
 .stat-card {
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #6b7280;
+}
